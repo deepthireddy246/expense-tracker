@@ -1,40 +1,91 @@
-# Expense Tracker
+# 💸 Expense Tracker with Real-Time Insights
 
-Welcome! This is a modern, full-stack Expense Tracker app designed to help you manage your expenses with real-time insights.
+Hi! I'm Deepthi Reddy Kallam — this is a full-stack web application I built to help users manage personal finances in a more interactive and intelligent way.
 
----
-
-## What Can You Do With This App?
-
-- **Sign up and log in** securely (using JWT authentication)
-- **Add, edit, and delete expenses** as you go
-- **See your expenses update in real time** (thanks to WebSockets)
-- **All your data is safely stored** in MySQL (or H2 for local development)
-- **Fast performance** with Redis caching
-- **REST API is secured** with Spring Security
-- **Easy to deploy**—the whole backend can run in Docker
+The app allows users to track expenses and income, get real-time budget alerts, and visualize spending trends with dynamic charts — all powered by modern Java, Spring Boot, React.js, WebSocket, and Docker.
 
 ---
 
-## What's Under the Hood?
+## ✨ Features
 
-- **Backend:** Java 17, Spring Boot 3, Spring Data JPA, Spring Security, WebSockets
-- **Database:** MySQL (or H2 for quick local testing)
-- **Cache:** Redis
-- **Frontend:** React (not included in this repo, but ready to connect)
-- **API Docs:** Swagger/OpenAPI (use springdoc for Spring Boot 3+)
-- **Containerization:** Docker
+- 🔐 User registration & login with JWT authentication
+- ➕ Add, edit, delete income and expense entries
+- 📊 Interactive dashboard with real-time charts (Chart.js)
+- 📣 Budget alerts via WebSocket notifications
+- ⚙️ REST APIs with Swagger documentation
+- 🧠 Redis caching for improved performance
+- 🐳 Fully Dockerized for easy deployment
 
 ---
 
-## How Do You Get Started?
+## 🔧 Tech Stack
+
+### 🔹 Backend
+- Java 17, Spring Boot
+- Spring Security (JWT Auth)
+- Spring WebSocket
+- Spring Data JPA + Hibernate
+- MySQL
+- Redis
+- Swagger (SpringDoc)
+
+### 🔹 Frontend
+- React.js (with Hooks)
+- Axios for API communication
+- Chart.js for data visualization
+- WebSocket client
+
+### 🔹 DevOps
+- Docker & Docker Compose
+
+---
+
+## 📁 Project Structure
+
+├── backend/
+│ ├── src/main/java/com/deepthi/expensetracker/
+│ │ ├── controller/
+│ │ ├── service/
+│ │ ├── repository/
+│ │ ├── entity/
+│ │ ├── security/
+│ │ ├── config/
+│ │ └── ExpensetrackerApplication.java
+│ ├── resources/application.yml
+│ └── Dockerfile
+
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ └── App.js
+│ └── Dockerfile
+
+├── docker-compose.yml
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## ▶️ Getting Started
 
 ### Prerequisites
 
-You'll need:
-- Java 17 or newer
-- Maven
-- MySQL (or just use H2 for local dev)
-- Redis (optional, for caching)
-- Docker (optional, for containerization)
+- Docker & Docker Compose installed
+
+### To Run the App Locally
+
+```bash
+docker-compose up --build
+Once all services are up:
+
+Frontend: http://localhost:3000
+
+Backend API: http://localhost:8080
+
+Swagger UI: http://localhost:8080/api-docs
 
