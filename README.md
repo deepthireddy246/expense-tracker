@@ -90,6 +90,5 @@ Backend API: http://localhost:8080
 Swagger UI: http://localhost:8080/api-docs
 
 
-![Dashboard](./screenshots/dashboard.png)
-
+--->Screenshot attached in the folder
 
