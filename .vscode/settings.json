@@ -1,0 +1,4 @@
+{
+    "java.format.settings.url": "java:open settings",
+    "java.compile.nullAnalysis.mode": "automatic"
+}
